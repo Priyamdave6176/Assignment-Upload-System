@@ -1,0 +1,62 @@
+﻿.lab {
+    box-shadow: inset 0 0 0 0 white;
+    color: black;
+    margin-top: auto;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.lab:hover {
+        color: blue;
+        box-shadow: inset 1300px 0 0 0 white;
+}
+
+.lab2{
+    box-shadow: inset 0 0 0 0 white;
+    color:red;
+    margin-top: auto;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.lab2:hover {
+    color: red;
+    box-shadow: inset 1300px 0 0 0 white;
+}
+
+.n1:focus{
+    background-color: green;
+}
+.btn-189{
+    background-color:blue;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    width:130px;
+    height:40px;
+    border:white;
+}
+.btn-189:hover{
+    background-color:green;
+}
+.btn-log {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    border: white;
+    margin-left: 80%;
+}
+
+    .btn-log:hover {
+        background-color: red;
+    }
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}

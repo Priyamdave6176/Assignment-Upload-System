@@ -1,0 +1,151 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master_page.master.cs" Inherits="Welcomepage.Master_page" %>
+<html oncontextmenu="return false" oncopy="return false" onpaste="return false" onselect="return false">
+    <head runat="server">
+  <title>
+    SRKI E-LAB
+  </title>
+    <link rel="icon" href="User_images/SRKI.png"/>
+        <!-- slider stylesheet -->
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="Masterpage_user/style2.css" />
+  
+
+  <!-- fonts style -->
+  <link href="Masterpage_user/style1.css" rel="stylesheet" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="Masterpage_user/bootstrap.css" />
+
+  <!-- Custom styles for this template -->
+  <link href="Masterpage_user/style.css" rel="stylesheet" />
+
+  <!-- responsive style -->
+  <link href="Masterpage_user/responsive.css" rel="stylesheet" />
+   <link href="Masterpage_user/lab1.css" rel="stylesheet"/>
+  <link href="Masterpage_user/style3.css" rel="stylesheet"/>
+<script>
+        let alert = false;
+        const interval = setInterval(() => {
+            document.title = alert
+                ? 'SRKI E-Lab' : 'Welcome, Students';
+            alert = !alert;
+        }, 2000);
+</script>
+  <link rel="stylesheet" href="User_login_css/Sweetalert.css" />
+  <link rel="stylesheet" href="User_login_css/welcomelbl.css" />
+  <script src="Master_JS/s2.js"></script>
+<link href="User_login_css/Bootstrap5.css" rel="stylesheet">
+<script src="Master_JS/Bootstrap5.js"></script>
+  <style>
+.btn-log {
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    border: white;
+}
+.btn-log:hover {
+        background-color: red;
+}
+
+.footer {
+  bottom:0;
+  left:0;
+  width:100%;
+  height: 90px;
+  background-color: #D0DAEE;
+}
+</style>
+<!--Javascript Validation End (Dont touch this code)-->
+  </head>
+ <body >
+  <!-- header section starts -->
+<form id="master" runat="server">
+<div class="hero_area">
+  <header class="header_section">
+    <div class="container-fluid">
+        <nav style="background-color: lightyellow;" class="navbar-expand-lg custom_nav-container pt-3 navbar-nav ">
+          <h3 class="animate"><b>Shree Ramkrishna Institute of Computer Education and Applied Science : E-LAB SYSTEM</b></h3>
+          <a>
+             <img src="User_images/SRKI.png" imgalign="left" style="background-color: lightyellow;"/>
+          </a>
+           <br />
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: 3px solid blue; margin-left:80%; margin-top:-75px;">
+               <img src="User_images/Toogle.jpg" width="25" height="25"/>
+           </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item">
+                    <asp:Label ID="Label9" runat="server" Text="" class="nav-link" style="background-color: lightblue; color: black; text-align: right;"></asp:Label>    
+                </li>
+                <li class="nav-item active">
+                    <b><asp:HyperLink ID="HyperLink1" runat="server" class="nav-link" NavigateUrl="~/Welcome.aspx">Home<span class="sr-only">(current)</span></asp:HyperLink></b>
+                </li>
+                <li class="nav-item">
+                    <b><asp:LinkButton ID="LinkButton1" runat="server" class="nav-link" Style="cursor:pointer;" OnClick="DownloadFile">New Assignment</asp:LinkButton></b>
+                </li>
+                <li class="nav-item">
+                    <b><asp:HyperLink ID="HyperLink3" runat="server" class="nav-link" NavigateUrl="~/uploaded_assignments.aspx">Uploaded Assignment</asp:HyperLink></b>
+                </li>
+                <li class="nav-item">
+                   <b><asp:Label ID="Label8" runat="server" Text="DEVELOP BY : Priyam Dave" class="nav-link" style="background-color: lightblue; color: black; text-align: right;"></asp:Label></b>
+                </li>
+                  <li class="nav-item">
+                       <asp:Button ID="LOGOUT" runat="server" Text="Logout" class="nav-link"  style="background-color: blue; color: white; text-align: right;  border: white; font-weight:bold;" OnClick="LOGOUT_Click"/>
+                </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+   <!-- end header section -->
+
+    <!-- information section -->
+
+  <section class="portfolio_section" style="border-radius: 25px; background-color: white;">
+    <div class="heading_container" style="background-color: white;">
+      <h2>
+        <span class="lab2">Read Carefully :</span>
+      </h2>
+      <p> 
+        One-day only one-time Submission in this System. Check your Header(Name,Enrollment No) than you have Upload your Assignment
+      </p>
+    </div>
+  </section>
+<!-- end information section -->
+
+   
+                
+        
+
+
+    <center>
+            <!-- master page control-->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <!-- master page control End-->
+     </center>
+</div>
+</form>
+<!-- footer section Start -->
+   <section class="flex-column footer_section" style=" background-color:black; color:white;">
+      <div class="container">
+          <p>
+          <b style="font-size:20px; text-align:center;">&copy; <span id="displayYear" style="font-size:20px; text-align:center;"></span> Reserved for : SRKI</b>
+          </p>
+      </div>
+    </section>
+<!-- footer section End-->
+     <!--Javascript Validation Start (Dont touch thide)-->
+  
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/custom.js"></script>
+  <script type="text/javascript" src="Master_JS/JavaScript.js"></script>
+</body>
+</html>
+

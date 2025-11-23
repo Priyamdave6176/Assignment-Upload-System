@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\E-LAB_Project-20251122T153936Z-1-001\\E-LAB_Project\\ADMIN_E-Lab\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3961F616-00F4-421A-BADF-A597F0C2C139}|ADMIN_E-Lab\\ADMIN_E-Lab.csproj|d:\\e-lab_project-20251122t153936z-1-001\\e-lab_project\\admin_e-lab\\admin_e-lab\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{3961F616-00F4-421A-BADF-A597F0C2C139}|ADMIN_E-Lab\\ADMIN_E-Lab.csproj|solutionrelative:admin_e-lab\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\E-LAB_Project-20251122T153936Z-1-001\\E-LAB_Project\\ADMIN_E-Lab\\ADMIN_E-Lab\\Web.config",
+              "RelativeDocumentMoniker": "ADMIN_E-Lab\\Web.config",
+              "ToolTip": "D:\\E-LAB_Project-20251122T153936Z-1-001\\E-LAB_Project\\ADMIN_E-Lab\\ADMIN_E-Lab\\Web.config",
+              "RelativeToolTip": "ADMIN_E-Lab\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-23T09:34:42.013Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
